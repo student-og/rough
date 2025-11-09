@@ -1,0 +1,26 @@
+<html>
+<head><title>sumofnnumbersusingpopupboxes</title>
+<scriptlanguage='javascript'> function addsum()
+{
+alert("you'regoingtogivemealistofnumbers.i'mgoingtoaddthemtogetherforyou"); 
+var keepgoing = true
+var sumofnums = 0;
+while(keepgoing){
+var num = prompt("what'sthenextnumbertoadd?","");
+if (num === null || num === "") {
+    keepgoing = false;
+} else {
+    sumofnums=sumofnums+parseInt(num);
+    keepgoing = confirm("add another number?");
+}
+}
+alert("thesumofallyour numbersis"+ sumofnums)
+}
+</script>
+</head>
+<body>
+<formname=frm>
+<inputtype=buttonvalue='sumofnnumbers'onclick="addsum();">
+</form>
+</body>
+</html>
